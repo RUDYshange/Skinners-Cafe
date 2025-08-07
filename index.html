@@ -41,10 +41,10 @@
 
         .logo {
             font-size: 2rem;
-            font-weight: bold;
-            color: #66ff99;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-weight: 400;
+            color: #7db8a8;
+            text-transform: lowercase;
+            letter-spacing: 1px;
         }
 
         .nav-links {
@@ -61,13 +61,13 @@
         }
 
         .nav-links a:hover {
-            color: #66ff99;
+            color: #7db8a8;
         }
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, #66ff99 0%, #33ff66 100%);
+            background: linear-gradient(135deg, #a8d5c7 0%, #7db8a8 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -84,13 +84,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="coffee" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23coffee)"/></svg>');
-            animation: float 20s ease-in-out infinite;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="coffee" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23coffee)"/></svg>');
+            animation: float 30s ease-in-out infinite;
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-10px); }
         }
 
         .hero-content {
@@ -100,10 +100,11 @@
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            animation: slideUp 1s ease-out;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            animation: slideUp 1.5s ease-out;
+            font-weight: 300;
         }
 
         @keyframes slideUp {
@@ -112,36 +113,39 @@
         }
 
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
-            animation: slideUp 1s ease-out 0.3s both;
+            opacity: 0.85;
+            animation: slideUp 1.5s ease-out 0.5s both;
+            font-weight: 300;
         }
 
         .cta-button {
             display: inline-block;
-            background: #66ff99;
-            color: #2c2c2c;
+            background: rgba(255, 255, 255, 0.9);
+            color: #7db8a8;
             padding: 1rem 2rem;
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            animation: slideUp 1s ease-out 0.6s both;
-            box-shadow: 0 4px 15px rgba(102, 255, 153, 0.4);
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: all 0.4s ease;
+            animation: slideUp 1.5s ease-out 1s both;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
         }
 
         .cta-button:hover {
-            background: #4dff88;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 255, 153, 0.6);
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border: 2px solid #7db8a8;
         }
 
         /* About Section */
         .about {
-            padding: 6rem 2rem;
-            background: #f8f9fa;
+            padding: 5rem 2rem;
+            background: #f9fafa;
         }
 
         .container {
@@ -151,9 +155,10 @@
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #2c2c2c;
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            color: #5a5a5a;
+            font-weight: 300;
         }
 
         .about-content {
@@ -164,8 +169,9 @@
         }
 
         .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
         }
 
         .about-image {
@@ -173,28 +179,28 @@
         }
 
         .coffee-cup {
-            width: 200px;
-            height: 200px;
-            background: #66ff99;
+            width: 180px;
+            height: 180px;
+            background: #7db8a8;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
-            color: #2c2c2c;
+            font-size: 3.5rem;
+            color: white;
             margin: 0 auto;
-            animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 10px 30px rgba(102, 255, 153, 0.3);
+            animation: pulse 4s ease-in-out infinite;
+            box-shadow: 0 5px 20px rgba(125, 184, 168, 0.2);
         }
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            50% { transform: scale(1.02); }
         }
 
         /* Menu Section */
         .menu {
-            padding: 6rem 2rem;
+            padding: 5rem 2rem;
             background: white;
         }
 
@@ -206,29 +212,32 @@
         }
 
         .menu-category {
-            background: #f8f9fa;
+            background: #fafbfb;
             padding: 2rem;
-            border-radius: 15px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid #f0f0f0;
         }
 
         .menu-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .menu-category h3 {
-            color: #66ff99;
-            font-size: 1.5rem;
+            color: #7db8a8;
+            font-size: 1.4rem;
             margin-bottom: 1rem;
+            font-weight: 400;
         }
 
         .menu-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #e9ecef;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #f5f5f5;
+            color: #666;
         }
 
         .menu-item:last-child {
@@ -236,14 +245,14 @@
         }
 
         .menu-price {
-            font-weight: bold;
-            color: #66ff99;
+            font-weight: 500;
+            color: #7db8a8;
         }
 
         /* Location Section */
         .location {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #2c2c2c 0%, #4a4a4a 100%);
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #5a5a5a 0%, #4a4a4a 100%);
             color: white;
         }
 
@@ -255,14 +264,17 @@
         }
 
         .location-info h3 {
-            color: #66ff99;
-            font-size: 1.5rem;
+            color: #a8d5c7;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
+            font-weight: 400;
         }
 
         .location-info p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 1rem;
+            opacity: 0.9;
+            line-height: 1.6;
         }
 
         .map-placeholder {
@@ -289,11 +301,11 @@
         }
 
         .social-links a {
-            color: #66ff99;
+            color: #a8d5c7;
             text-decoration: none;
             margin: 0 1rem;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
+            font-size: 1rem;
+            transition: color 0.4s ease;
         }
 
         .social-links a:hover {
@@ -328,8 +340,8 @@
         /* Scroll animations */
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
+            transform: translateY(20px);
+            transition: all 1s ease;
         }
 
         .fade-in.visible {
@@ -535,11 +547,11 @@
         // Menu category hover effects
         document.querySelectorAll('.menu-category').forEach(category => {
             category.addEventListener('mouseenter', function() {
-                this.style.background = '#f1f3f4';
+                this.style.background = '#f5f6f7';
             });
             
             category.addEventListener('mouseleave', function() {
-                this.style.background = '#f8f9fa';
+                this.style.background = '#fafbfb';
             });
         });
     </script>
